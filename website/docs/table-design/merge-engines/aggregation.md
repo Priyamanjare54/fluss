@@ -987,7 +987,7 @@ partialWriter.delete(primaryKeyRow);
 ```
 
 :::note
-**Current Limitation**: The aggregation merge engine does not support retraction semantics (e.g., subtracting from a sum, reverting a max). 
+**Current Limitation**: The aggregation merge engine does not support retraction semantics (e.g., subtracting from a sum, reverting a max).
 
 - **Full update mode**: Delete operations can only remove the entire record
 - **Partial update mode**: Delete operations can only null out target columns, not retract aggregated values
@@ -1015,5 +1015,5 @@ For detailed information about Exactly-Once implementation, please refer to: [FI
 - [Default Merge Engine](./default.md)
 - [FirstRow Merge Engine](./first-row.md)
 - [Versioned Merge Engine](./versioned.md)
-- [Primary Key Tables](../index.md)
-- [Fluss Client API](../../../../apis/java-client.md)
+- [Primary Key Tables](../table-types/pk-table/index.md)
+- [Fluss Client API](../../apis/java-client.md)
